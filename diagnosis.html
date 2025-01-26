@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagnosa Penyakit</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Diagnosa Penyakit {{ jenis_tanaman }}</h1>
+    </header>
+    
+    <section>
+        <h3>Penyakit yang terdiagnosis:</h3>
+    </section>
+
+    <div>
+        <h2>{{ penyakit }}</h2>
+    </div>
+    
+    <div class="diagnosis-selection">
+        <a href="/gejala_{{ jenis_tanaman.lower() }}">
+            <img src="/static/image/diagnosa_2.png" alt="diagnosis" class="img-select">
+        </a>
+        <a href="/daftarpenyakit_{{ jenis_tanaman.lower() }}">
+            <img src="/static/image/daftar_2.png" alt="gambar_daftar_2" class="img-select">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <a href="/about">
+            <img src="/static/image/about.png" alt="About Us"> 
+        </a>
+    </footer>
+</body>
+</html>

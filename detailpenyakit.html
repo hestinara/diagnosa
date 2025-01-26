@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Penyakit {{ jenis_tanaman }}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Detail Penyakit "{{ penyakit }}"</h1>
+    </header>
+    
+    <div class="detail-penyakit">
+        <h3>Gejala:</h3>
+        {% for gejala in detail.gejala %}
+            <p>{{ gejala }}</p>  <!-- Changed to <p> for better styling -->
+        {% endfor %}
+        
+        <h3>Solusi:</h3>
+        {% for solusi in detail.solusi %}
+            <p>{{ solusi }}</p>
+        {% endfor %}
+
+        <h3>Rekomendasi Produk:</h3>
+        {% for rekomendasi_produk in detail.rekomendasi_produk %}
+            <p>{{ rekomendasi_produk }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="diagnosis-selection">
+        <a href="/">
+            <img src="/static/image/home.png" alt="homepage" class="img-select">
+        </a>
+        <a href="/daftarpenyakit_{{ jenis_tanaman.lower() }}">
+            <img src="/static/image/daftar_2.png" alt="gambar_daftar_2" class="img-select">
+        </a>
+    </div>
+
+    <footer class="footer">
+        <a href="/about">
+            <img src="/static/image/about.png" alt="About Us"> 
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+body {
+    font-family: Outfit;
+    background-image: url('/static/image/bg.png');
+    background-position: center;
+    margin:0;
+    padding: 0;
+}
+
+header {
+    font-size: 20px;
+    text-align: center;
+    background-color:white;
+    color: #D13D3D;
+    padding: 5px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+h2 {
+    color: #D13D3D;
+    text-align: center;
+    font-size: 28px;
+}
+
+h3 {
+    color: #D13D3D;
+    text-align: center;
+}
+
+.back-logo {
+    position: relative; /* Relatif terhadap posisi default elemen */
+    margin-top: 10px; /* Jarak antara logo dan header */
+    margin-left: 20px; /* Jarak dari sisi kiri */
+}
+
+.back-logo a {
+    display: inline-block;
+    color: white; /* Warna ikon (ubah sesuai kebutuhan) */
+    text-decoration: none; /* Hilangkan garis bawah */
+    transition: transform 0.2s, color 0.2s; /* Efek hover */
+}
+
+.back-logo a:hover {
+    color: white; /* Warna ikon saat hover (contoh: biru) */
+    transform: scale(1.1); /* Perbesar ikon saat hover */
+}
+
+
+.image-index {
+    display: flex; /* Mengatur kontainer untuk menggunakan flexbox */
+    justify-content: center; /* Memusatkan gambar */
+    margin: 20px 0; /* Jarak atas dan bawah */
+}
+
+.img-index {
+    width: 450px; /* Atur lebar gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    margin: 10px; /* Jarak antar gambar */
+    border-radius: 10px; /* Jika ingin memberikan efek melengkung pada sudut gambar */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.img-index:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+section {
+    text-align: center;
+    margin: 30px 0;
+    color:  #D13D3D;
+}
+
+.gejala-form {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    text-align:center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+    gap: 15px; /* Jarak antar elemen */
+    justify-content: center;
+}
+
+.bubble {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.submit-btn {
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #white;
+    color: #D13D3D;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #D13D3D;
+    color: white;
+    transform: scale(1.05);
+}
+
+.diagnosis-selection {
+    display: flex; /* Mengatur kontainer untuk menggunakan flexbox */
+    justify-content: center; /* Memusatkan gambar */
+    margin: 10px 0; /* Jarak atas dan bawah */
+}
+
+.img-select {
+    width: 100px; /* Atur lebar gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    margin: 10px; /* Jarak antar gambar */
+    border-radius: 10px; /* Jika ingin memberikan efek melengkung pada sudut gambar */
+    transition: transform 0.3s; /* Efek transisi saat hover */
+}
+
+.img-select:hover {
+    transform: scale(1.05); /* Efek zoom saat hover */
+}
+
+.daftar-penyakit {
+    display: flex;
+    flex-wrap: wrap; /* Membungkus elemen ke baris baru */
+    justify-content: center; /* Menyusun elemen di tengah secara horizontal */
+    gap: 15px; /* Jarak antar gelembung */
+    max-width: 400px; /* Lebar maksimum container (sesuai kebutuhan) */
+    margin: 0 auto; /* Menengahkan container di halaman */
+}
+
+.dp-bubble {
+    background-color: white; /* Latar belakang putih */
+    border-radius: 10px; /* Sudut melengkung */
+    padding: 15px; /* Ruang dalam gelembung */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #D13D3D; /* Warna teks */
+    font-weight: bold; /* Teks tebal */
+    text-align: center; /* Teks di tengah */
+    width: 45%; /* Setiap gelembung mengambil hampir separuh lebar container */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover */
+}
+
+.dp-bubble:hover {
+    transform: scale(1.05); /* Membesarkan gelembung saat hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas saat hover */
+}
+
+
+.detail-penyakit {
+    background-color: white; /* White background */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    margin-bottom: 20px; /* Spacing between sections */
+    text-align: center;
+    color: #D13D3D;
+}
+
+.about-container {
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 20px;
+    text-align:center;
+    color: #D13D3D;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: white; /* Warna latar belakang footer */
+    border-radius: 50%; /* Membuat footer menjadi bulat */
+    width: 50px; /* Lebar footer */
+    height: 50px; /* Tinggi footer */
+    display: flex; /* Menggunakan flexbox untuk memusatkan konten */
+    justify-content: center; /* Memusatkan horizontal */
+    align-items: center; /* Memusatkan vertikal */
+    position: fixed; /* Memastikan footer tetap di bawah */
+    bottom: 20px; /* Jarak dari bawah */
+    right: 20px; /* Jarak dari kanan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk efek kedalaman */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Menambahkan transisi untuk hover */
+}
+
+.footer:hover {
+    transform: scale(1.1); /* Membesarkan footer sedikit saat hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Meningkatkan bayangan saat hover */
+}
+
+.footer img {
+    cursor: pointer; /* Mengubah kursor menjadi pointer saat hover di ikon */
+    width: 100%; /* Ukuran lebar gambar */
+    height: auto; /* Tinggi otomatis untuk menjaga rasio aspek */
+    border-radius: 50%; /* Membuat gambar juga bulat */
+    object-fit: cover; /* Memastikan gambar mengisi area tanpa distorsi */
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek hover pada gambar */
+}
+
+.footer img:hover {
+    transform: scale(1.2); /* Membesarkan gambar sedikit saat hover */
+}
